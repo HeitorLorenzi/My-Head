@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My-Head | Animação GSAP</title>
+    <title>My-Head | Heitor Lorenzi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Cabeçalho da página -->
     <header class="site-header">
         <div class="container d-flex justify-content-between align-items-center py-3">
             <a href="#inicio" class="logo">⚡ My-Head</a>
@@ -21,15 +23,44 @@
         </div>
     </header>
 
-    <main id="inicio" class="py-5">
-        <div class="container text-center">
-            <h1 class="mb-4">Animação da Cabeça Girando</h1>
-            <div class="d-flex align-items-center justify-content-center my-4">
-                <a href="./readme.html">
-                    <img id="img" src="img/cabeca.jpg" alt="Cabeça Girando">
-                </a>
+    <main id="inicio">
+        <section id="animacao" class="py-5">
+            <div class="container text-center">
+                <span class="badge-custom mb-3">GSAP 3 + GitFlow + Bootstrap 5</span>
+                <h1 class="display-5 fw-bold mb-3">Cabeça Girando com Interatividade</h1>
+                <p class="lead text-muted mb-4">Projeto interativo personalizado a partir da atividade base com animações fluidas via GSAP.</p>
+                
+                <div class="animation-card my-4 mx-auto">
+                    <div class="img-wrapper">
+                        <img id="img" src="img/cabeca.jpg" alt="Cabeça Girando" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="controls-wrapper mt-4">
+                        <button id="btn-speed-up" class="btn btn-primary btn-sm me-2">⚡ Mais Rápido</button>
+                        <button id="btn-speed-down" class="btn btn-secondary btn-sm me-2">🐢 Mais Lento</button>
+                        <button id="btn-pause" class="btn btn-warning btn-sm me-2">⏸️ Pausar / Play</button>
+                        <button id="btn-reverse" class="btn btn-info btn-sm">🔄 Inverter</button>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="sobre" class="py-5 bg-darker">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card bg-card text-light p-4 border-0 shadow">
+                            <h2 class="h3 fw-bold mb-3 text-primary">Sobre o Projeto & Desenvolvedor</h2>
+                            <p class="text-muted">
+                                Desenvolvido por <strong>Heitor Lorenzi</strong> para praticar o fluxo <strong>GitFlow</strong>, integração de <strong>Pull Requests</strong> e deploy automatizado no <strong>GitHub Pages</strong>.
+                            </p>
+                            <p class="text-muted mb-0">
+                                O projeto integra HTML5, estilos CSS personalizados, Bootstrap 5 e a biblioteca de animações GSAP (GreenSock).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
