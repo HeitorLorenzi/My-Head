@@ -1,4 +1,30 @@
-html,
-body {
-    height: 100%
+:root {
+  --bg-dark: #0b132b;
+  --bg-card: #1c2541;
+  --primary: #48cae4;
+  --text-main: #f8f9fa;
+  --text-muted: #cbd5e1;
 }
+html, body {
+  height: 100%;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+}
+.site-header {
+  background: rgba(11, 19, 43, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+}
+.nav-menu { display: flex; gap: 1.2rem; }
+.nav-link-custom {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-link-custom:hover { color: var(--primary); }
