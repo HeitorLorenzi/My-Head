@@ -1,78 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página pessoal de Heitor Lorenzi | Estudante de Tecnologia">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página pessoal de Heitor Lorenzi | Estudante de Tecnologia e Desenvolvedor Front-end"
+    />
     <title>My-Head | Heitor Lorenzi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho / Navbar -->
     <header class="site-header">
-        <div class="container nav-container">
-            <a href="#inicio" class="logo">⚡ My-Head</a>
-            <nav class="nav-menu">
-                <a href="#inicio" class="nav-link">Início</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#habilidades" class="nav-link">Habilidades</a>
-                <a href="#projetos" class="nav-link">Projetos</a>
-                <a href="#contato" class="nav-link">Contato</a>
-            </nav>
-        </div>
+      <div class="container nav-container">
+        <a href="#inicio" class="logo">
+          <span class="logo-badge">⚡</span> My-Head
+        </a>
+        <nav class="nav-menu" aria-label="Menu principal">
+          <a href="#inicio" class="nav-link">Início</a>
+          <a href="#sobre" class="nav-link">Sobre</a>
+          <a href="#habilidades" class="nav-link">Habilidades</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#contato" class="nav-link">Contato</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="inicio">
-        <section class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="badge">Estudante de Tecnologia</span>
-                    <h1 class="hero-title">Heitor Lorenzi</h1>
-                    <p class="hero-description">Desenvolvimento web, interfaces modernas e versionamento com GitFlow.</p>
-                </div>
-                <div class="profile-card">
-                    <div class="avatar-circle">HL</div>
-                    <h2>Heitor Lorenzi</h2>
-                    <p>Front-end & Estudante</p>
-                </div>
+    <main>
+      <!-- Seção Hero -->
+      <section id="inicio" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="badge">
+              <span class="badge-dot"></span> Estudante de Tecnologia & Front-end
             </div>
-        </section>
+            <h1 class="hero-title">
+              Olá, eu sou <br />
+              <span class="gradient-text">Heitor Lorenzi</span>
+            </h1>
+            <p class="hero-description">
+              Desenvolvendo interfaces modernas, funcionais e intuitivas. Focado em boas práticas, GitFlow e evolução contínua na área de tecnologia.
+            </p>
+            <div class="hero-actions">
+              <a href="#sobre" class="btn btn-primary">Conhecer Mais</a>
+              <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+            </div>
+          </div>
 
-        <section id="sobre" class="section section-dark">
-            <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <div class="about-card">
-                    <p>Meu nome é Heitor Lorenzi. Sou apaixonado por tecnologia e desenvolvimento web. Estou praticando versionamento avançado com GitFlow, Pull Requests e deploy automatizado no GitHub Pages.</p>
-                </div>
+          <div class="hero-card-wrapper">
+            <div class="profile-card">
+              <div class="avatar-circle">
+                <span>HL</span>
+              </div>
+              <h2 class="profile-name">Heitor Lorenzi</h2>
+              <p class="profile-role">Desenvolvedor Front-end & Estudante</p>
+              <div class="profile-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">GitFlow</span>
+                <span class="tag">GitHub</span>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="habilidades" class="section">
-            <div class="container">
-                <h2 class="section-title">Habilidades</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">🌐 HTML5 Semântico</div>
-                    <div class="skill-item">🎨 CSS3 & Responsividade</div>
-                    <div class="skill-item">🌿 Git & GitFlow</div>
-                    <div class="skill-item">🚀 GitHub Pages</div>
-                </div>
-            </div>
-        </section>
+      <!-- Seção Sobre Mim -->
+      <section id="sobre" class="section section-dark">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Apresentação</span>
+            <h2 class="section-title">Sobre Mim</h2>
+          </div>
+          <div class="card about-card">
+            <p class="about-text">
+              Meu nome é <strong>Heitor Lorenzi</strong>. Sou apaixonado por tecnologia e programação. Atualmente estou aprofundando meus conhecimentos em desenvolvimento web, boas práticas de versionamento com <strong>Git e GitFlow</strong>, padronização de commits, automações e deploy contínuo com <strong>GitHub Pages</strong>.
+            </p>
+            <p class="about-text">
+              Busco sempre construir soluções limpas, acessíveis e com excelente experiência visual para os usuários.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="projetos" class="section section-dark">
-            <div class="container">
-                <h2 class="section-title">Projetos</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>My-Head</h3>
-                        <p>Projeto de página pessoal versionada com GitFlow e hospedada no GitHub Pages.</p>
-                    </article>
-                </div>
+      <!-- Seção Habilidades -->
+      <section id="habilidades" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Competências</span>
+            <h2 class="section-title">Tecnologias & Habilidades</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-icon">🌐</span>
+              <h3>HTML5 Semântico</h3>
+              <p>Estruturação acessível e otimizada para SEO.</p>
             </div>
-        </section>
+            <div class="skill-item">
+              <span class="skill-icon">🎨</span>
+              <h3>CSS3 Moderno</h3>
+              <p>Flexbox, Grid, Variáveis CSS e Design Responsivo.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🌿</span>
+              <h3>Git & GitFlow</h3>
+              <p>Branches, Pull Requests, Commits Semânticos e Versionamento.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">🚀</span>
+              <h3>GitHub Pages</h3>
+              <p>Hospedagem rápida e deploy automatizado de sites estáticos.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">📱</span>
+              <h3>Mobile First</h3>
+              <p>Layouts adaptáveis para smartphones, tablets e desktops.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-icon">✨</span>
+              <h3>UI/UX Design</h3>
+              <p>Interfaces atraentes com foco na experiência do usuário.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Projetos -->
+      <section id="projetos" class="section section-dark">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Portfólio</span>
+            <h2 class="section-title">Projetos em Destaque</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-badge">Em Destaque</div>
+              <h3>My-Head Portfolio</h3>
+              <p>
+                Projeto desenvolvido seguindo o fluxo de versionamento GitFlow, com branch develop, feature branch, Pull Requests e deploy no GitHub Pages.
+              </p>
+              <div class="project-techs">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>GitFlow</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-badge">Design</div>
+              <h3>Página Responsiva</h3>
+              <p>
+                Interface fluida com tipografia moderna, efeitos visuais sutis e alta performance de renderização.
+              </p>
+              <div class="project-techs">
+                <span>CSS Grid</span>
+                <span>Flexbox</span>
+                <span>UI/UX</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-badge">Versionamento</div>
+              <h3>Workflow Git</h3>
+              <p>
+                Estrutura de repositório padronizada com templates de Pull Request e histórico organizado de commits.
+              </p>
+              <div class="project-techs">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>CI/CD</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Contato -->
+      <section id="contato" class="section">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-info">
+              <span class="section-tag">Conecte-se</span>
+              <h2>Vamos conversar ou desenvolver um projeto?</h2>
+              <p>Entre em contato pelo e-mail ou acompanhe meus repositórios no GitHub.</p>
+            </div>
+            <div class="contact-buttons">
+              <a class="btn btn-primary" href="mailto:heitor.lorenzi@email.com">
+                ✉️ Enviar E-mail
+              </a>
+              <a class="btn btn-secondary" href="https://github.com/HeitorLorenzi" target="_blank" rel="noopener noreferrer">
+                🐙 Ver GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 My-Head</p>
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 <strong>My-Head</strong> • Heitor Lorenzi</p>
+        <p class="footer-note">Desenvolvido com GitFlow & GitHub Pages</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
