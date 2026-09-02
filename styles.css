@@ -1,10 +1,12 @@
 :root {
     --bg-main: #0b132b;
     --bg-secondary: #1c2541;
+    --bg-card: #222e50;
     --primary: #48cae4;
     --text-main: #f8f9fa;
     --text-muted: #cbd5e1;
     --border-color: rgba(255, 255, 255, 0.1);
+    --radius-md: 12px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -41,3 +43,49 @@ body {
     transition: color 0.2s;
 }
 .nav-link:hover { color: var(--primary); }
+
+.hero-section { padding: 4rem 0; }
+.hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center; }
+.badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: rgba(72, 202, 228, 0.15);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+.hero-title { font-size: 2.8rem; font-weight: 800; margin-bottom: 0.8rem; }
+.hero-description { color: var(--text-muted); font-size: 1.1rem; }
+
+.profile-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+}
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--bg-main);
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.section { padding: 4rem 0; }
+.section-dark { background-color: var(--bg-secondary); }
+.section-title { font-size: 2rem; margin-bottom: 1.5rem; }
+.about-card, .skill-item, .project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
