@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My-Head | Página interativa com animação GSAP personalizada por Heitor Lorenzi">
     <title>My-Head | Heitor Lorenzi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -11,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cabeçalho / Navbar -->
     <header class="site-header">
         <div class="container d-flex justify-content-between align-items-center py-3">
-            <a href="#inicio" class="logo">⚡ My-Head</a>
+            <a href="#inicio" class="logo">
+                <span class="logo-badge">⚡</span> My-Head
+            </a>
             <nav class="nav-menu">
                 <a href="#inicio" class="nav-link-custom">Início</a>
                 <a href="#animacao" class="nav-link-custom">Animação</a>
@@ -24,44 +28,87 @@
     </header>
 
     <main id="inicio">
-        <section id="animacao" class="py-5">
+        <!-- Hero Section com Animação e Controles -->
+        <section id="animacao" class="py-5 hero-section">
             <div class="container text-center">
                 <span class="badge-custom mb-3">GSAP 3 + GitFlow + Bootstrap 5</span>
-                <h1 class="display-5 fw-bold mb-3">Cabeça Girando com Interatividade</h1>
-                <p class="lead text-muted mb-4">Projeto interativo personalizado a partir da atividade base com animações fluidas via GSAP.</p>
+                <h1 class="display-5 fw-bold mb-3 text-gradient">Cabeça Girando com Interatividade</h1>
+                <p class="lead text-muted mb-4 max-w-600 mx-auto">
+                    Projeto personalizado a partir dos arquivos base da aula anterior, com controles interativos de animação, design responsivo e deploy no GitHub Pages.
+                </p>
                 
                 <div class="animation-card my-4 mx-auto">
                     <div class="img-wrapper">
-                        <img id="img" src="img/cabeca.jpg" alt="Cabeça Girando" class="img-fluid rounded-circle">
+                        <img id="img" src="img/cabeca.jpg" alt="Cabeça Girando" class="img-fluid rounded-circle rotating-head">
                     </div>
-                    <div class="controls-wrapper mt-4">
-                        <button id="btn-speed-up" class="btn btn-primary btn-sm me-2">⚡ Mais Rápido</button>
-                        <button id="btn-speed-down" class="btn btn-secondary btn-sm me-2">🐢 Mais Lento</button>
-                        <button id="btn-pause" class="btn btn-warning btn-sm me-2">⏸️ Pausar / Play</button>
-                        <button id="btn-reverse" class="btn btn-info btn-sm">🔄 Inverter</button>
+                    <div class="controls-wrapper mt-4 d-flex flex-wrap justify-content-center gap-2">
+                        <button id="btn-speed-up" class="btn btn-custom btn-primary">⚡ Mais Rápido</button>
+                        <button id="btn-speed-down" class="btn btn-custom btn-secondary">🐢 Mais Lento</button>
+                        <button id="btn-pause" class="btn btn-custom btn-warning">⏸️ Pausar / Play</button>
+                        <button id="btn-reverse" class="btn btn-custom btn-info">🔄 Inverter</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Seção Sobre Mim -->
         <section id="sobre" class="py-5 bg-darker">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <div class="card bg-card text-light p-4 border-0 shadow">
-                            <h2 class="h3 fw-bold mb-3 text-primary">Sobre o Projeto & Desenvolvedor</h2>
+                        <div class="card bg-card text-light p-4 p-md-5 border-0 shadow-lg rounded-4">
+                            <span class="text-primary text-uppercase fw-bold small mb-2 d-block">Apresentação</span>
+                            <h2 class="h3 fw-bold mb-3">Sobre o Projeto & Desenvolvedor</h2>
                             <p class="text-muted">
-                                Desenvolvido por <strong>Heitor Lorenzi</strong> para praticar o fluxo <strong>GitFlow</strong>, integração de <strong>Pull Requests</strong> e deploy automatizado no <strong>GitHub Pages</strong>.
+                                Olá! Meu nome é <strong>Heitor Lorenzi</strong>. Este projeto (<strong>My-Head</strong>) foi estruturado seguindo rigorosamente o fluxo de trabalho profissional baseado em <strong>GitFlow</strong>, com branches <code>main</code>, <code>develop</code> e <code>feature/personalizar-home</code>.
                             </p>
-                            <p class="text-muted mb-0">
-                                O projeto integra HTML5, estilos CSS personalizados, Bootstrap 5 e a biblioteca de animações GSAP (GreenSock).
+                            <p class="text-muted mb-4">
+                                Adicionei interatividade na animação com <strong>GSAP (GreenSock)</strong>, personalização visual completa com tema escuro moderno, template de <strong>Pull Request</strong> e deploy automatizado no <strong>GitHub Pages</strong>.
                             </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">HTML5</span>
+                                <span class="badge bg-secondary">CSS3 Responsivo</span>
+                                <span class="badge bg-info text-dark">Bootstrap 5</span>
+                                <span class="badge bg-success">GSAP 3</span>
+                                <span class="badge bg-warning text-dark">GitFlow</span>
+                                <span class="badge bg-light text-dark">GitHub Pages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-card p-4 p-md-5 text-center rounded-4">
+                            <h2 class="h3 fw-bold mb-2">Vamos conversar?</h2>
+                            <p class="text-muted mb-4">Entre em contato comigo ou acompanhe meus outros projetos no GitHub.</p>
+                            <div class="d-flex justify-content-center flex-wrap gap-3">
+                                <a href="mailto:heitor.lorenzi@email.com" class="btn btn-primary btn-lg">
+                                    ✉️ heitor.lorenzi@email.com
+                                </a>
+                                <a href="https://github.com/HeitorLorenzi" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
+                                    🐙 Perfil no GitHub
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-muted small">
+            <span>© 2026 <strong>My-Head</strong> • Desenvolvido por Heitor Lorenzi</span>
+            <span>Versão GitFlow & GitHub Pages</span>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
